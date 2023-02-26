@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Centraleta - Calendari</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="container-fluid position-relative">
+		<div class="position-absolute h-100 w-100 principalFormTasca">
+			<div class="caixa caixa--gris position-absolute top-50 start-50 translate-middle text-center rounded p-5">
+				<p class="h4">Nova Tasca</p>
+				<hr>
+				<form action="post">
+                    <div class="row pb-2">
+                        <label for="nom" class="col-5 align-self-start text-start"><strong>Nom: </strong></label>
+                        <input type="text" id="nom" name="nom" class="col-6 align-self-end">
+                   </div> 
+                   <div class="row pb-2">
+                        <label for="descripcio" class="col-5 align-self-start text-start"><strong>Descripció: </strong></label>
+                        <input type="text" id="descripcio" name="descripcio" class="col-6 align-self-end">
+                    </div>
+                    <button class="tancarModal btn btn-primary">Guardar</button>
+                    <button class="tancarModal btn btn-primary">Cancelar</button>
+                </form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="contenidor-calendari col-sm-12 col-lg-8 vh-100 p-3">
+				<div class="calendari h-100 rounded">
+					<div class="calendari__nomDies row rounded-top ms-0 me-0">
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Dilluns</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Dimarts</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Dimecres</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Dijous</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Divendres</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Dissabte</p>
+						</div>
+						<div class="col">
+							<p class="calendari__nomDia fs-3 mt-1">Diumenge</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aside col-sm-12 col-lg-4 vh-100">
+                <div class="row ps-2 ps-lg-0 h-100">
+                    <div class="llista col-sm-8 col-lg-12 pt-3 pe-2 h-75">
+                        <h2 class="h1">Tasques <span class="text-muted fs-5">01/02/2023</span></h2>
+                        <div class="form-check ps-5 fs-4">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                              Comprar pà
+                            </label>
+                        </div>
+                        <div class="form-check ps-5 fs-4">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                              Estendre la roba
+                            </label>
+                        </div>
+                        <div class="form-check ps-5 fs-4">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                              Acabar quinzena 10
+                            </label>
+                        </div>
+                        <div class="form-check ps-5 fs-4">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault4">
+                            <label class="form-check-label" for="flexCheckDefault4">
+                              Cridar a la iaia
+                            </label>
+                        </div>
+                        <div class="form-check ps-5 fs-4">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault5">
+                            <label class="form-check-label" for="flexCheckDefault5">
+                              Fer dinar demà
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-12 pt-3 pe-2 h-25" >
+						<div class="row h-100 pe-2 align-items-center">
+							<div class="col">
+                                <img src="../img/Centraleta3.png" alt="Logo Centraleta" class="image-responsive imatge px-auto py-auto">
+                            </div>
+							<div class="col">
+								<a class="boto btn w-100 btn-primary" href="#">Diari</a>
+								<br>
+								<a class="boto btn w-100 btn-secondary mt-2" href="../index.html">Ixir</a>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="../js/custom.js"></script>
+</body>
+</html>

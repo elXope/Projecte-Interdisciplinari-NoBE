@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicació Web destinada a la gestió individual del temps i del dia a dia. Gratuïta.">
+    <meta name="keywords" content="autoconeixement, productivitat, gestió del temps, calendari, horari, setmana, mes, tasques, llista de tasques, diari, millora, millora personal, gestió de tasques, relaxació, plenitud, satisfacció">
+    <title>La Centraleta</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0" href="#">
+                <img src="img/Centraleta3.png" alt="Logo La Centraleta" class="navbar__img">
+                La Centraleta
+            </a>
+            <div>
+                <a href="html/register.html" class="btn btn-primary">Registrar-se</a>
+                <a href="html/login.html" class="btn btn-primary">Iniciar Sessió</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row content-align-center">
+                <div class="col header__info text-center">
+                    <img src="img/Centraleta3.png" alt="Logo Centraleta" class="header__img img-fluid">
+                    <h1 class="header__titol">
+                        <span class="display-1 d-block">La Centraleta</span>
+                        <span class="display-3">el centre de gravetat del teu dia a dia</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main--gris mt-5 pt-5 pb-5">
+            <div class="container">
+                <h2 class="text-center mt-3 display-3">Calendari</h2>
+                <div class="row pt-3">
+                    <div class="col-sm-12 col-md-8">
+                        <p class="fs-3 lletra-blanc">La funció de calendari permet vore l'organització mensual d'un cop d'ull i afegir tasques amb un sol click.</p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 position-relative">
+                        <div class="contenidor-calendari">
+                            <div class="calendari h-100 rounded">
+                                <div class="calendari__nomDies row rounded-top ms-0 me-0">
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Dilluns</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Dimarts</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Dimecres</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Dijous</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Divendres</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Dissabte</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="calendari__nomDia fs-3 mt-1">Diumenge</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 mb-5 pt-5 pb-5">
+            <div class="container">
+                <h2 class="text-center mt-3 display-3">Llista de tasques</h2>
+                <div class="row pt-3">
+                    <div class="col-sm-12 col-md-4 position-relative">
+                        <div class="llista caixa caixa--gris p-3 rounded">
+                            <h2 class="h1">Tasques <span class="text-muted fs-5">26/02/2023</span></h2>
+                            <div class="form-check ps-5 fs-4">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault1">
+                                <label class="form-check-label" for="flexCheckDefault1">
+                                  Comprar pà
+                                </label>
+                            </div>
+                            <div class="form-check ps-5 fs-4">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault2">
+                                <label class="form-check-label" for="flexCheckDefault2">
+                                  Estendre la roba
+                                </label>
+                            </div>
+                            <div class="form-check ps-5 fs-4">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault3">
+                                <label class="form-check-label" for="flexCheckDefault3">
+                                  Acabar quinzena 10
+                                </label>
+                            </div>
+                            <div class="form-check ps-5 fs-4">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault4">
+                                <label class="form-check-label" for="flexCheckDefault4">
+                                  Cridar a la iaia
+                                </label>
+                            </div>
+                            <div class="form-check ps-5 fs-4">
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault5">
+                                <label class="form-check-label" for="flexCheckDefault5">
+                                  Fer dinar demà
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8">
+                        <p class="fs-3 lletra-blanc">
+                            La llista te permet vore les tasques que tens pendents i les que ja estan fetes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main--gris mt-5 pt-5 pb-5">
+            <div class="container">
+                <h2 class="text-center mt-3 display-3">Registra't gratis!</h2>
+                <div class="row pt-3 text-center">
+                    <div class="col m-3">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Registrar-se</h5>
+                                <p class="card-text">Encara no tens un compte? Resgistra't, és gratis!</p>
+                                <a href="html/register.html" class="btn btn-primary">Registrar-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m-3">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Inicia sessió</h5>
+                                <p class="card-text">Ja tens un compte? Inicia sessió!</p>
+                                <a href="html/login.html" class="btn btn-primary">Iniciar Sessió</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container p-3 lletra-blanc">
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <strong>Instagram: </strong>
+                        <a href="#" class="text-decoration-none lletra-blanc">@lacentraleta</a>
+                    </p>
+                    <p>
+                        <strong>Twitter: </strong>
+                        <a href="#" class="text-decoration-none lletra-blanc">@lacentraleta</a>
+                    </p>
+                </div>
+                <div class="col text-end">
+                    <p>El fons usat és de <a href="https://www.svgbackgrounds.com" class="text-decoration-none lletra-blanc">SVGbackgrounds.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
